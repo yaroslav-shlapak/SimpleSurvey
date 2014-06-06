@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 			e.printStackTrace();
 		}
 		try {
-			Log.i("test", jsonObj.getString("questionSet"));
+			Log.i("test", jsonObj.getJSONArray("questionSet").get(0).toString());
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
